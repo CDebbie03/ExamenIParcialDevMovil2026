@@ -7,16 +7,16 @@ export default function Inicio() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Hola, Estimado</Text>
-      <Text style={styles.saldo}>Su saldo Actual: L.{saldo}</Text>
+      <Text style={styles.titulo}>Hola, Estimado Usuario</Text>
+      <Text style={styles.saldo}>Su saldo Actual es de L.{saldo}</Text>
 
-      <Button title="Hacer el deposito de (+L.500)" onPress={depositar} />
+      <Button title="Hacer el deposito de (L.500)" onPress={depositar} />
 
       <Text style={styles.subtitulo}>Transacciones</Text>
       <FlatList
         data={transacciones}
         keyExtractor={(_, index) => index.toString()}
-        renderItem={({ item }) => <Text style={styles.item}>• {item}</Text>}
+        renderItem={({ item }) => <Text style={styles.item}> {item}</Text>}
       />
     </View>
   );

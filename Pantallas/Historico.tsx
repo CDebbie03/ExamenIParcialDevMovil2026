@@ -7,15 +7,15 @@ export default function Historico() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Historial</Text>
+      <Text style={styles.titulo}>Informacion sobre su historial de transacciones</Text>
       <Text style={styles.total}>
-        Cantidad de transacciones: {transacciones.length}
+        Cantidad de transacciones realizadas: {transacciones.length}
       </Text>
 
       <FlatList
         data={transacciones}
         keyExtractor={(_, index) => index.toString()}
-        renderItem={({ item }) => <Text style={styles.item}>• {item}</Text>}
+        renderItem={({ item }) => <Text style={styles.item}> {item}</Text>}
       />
     </View>
   );

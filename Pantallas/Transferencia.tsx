@@ -21,8 +21,8 @@ export default function Transferencias() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Sus transferencias</Text>
-      <Text style={styles.saldo}>Su saldo Actual: L.{saldo}</Text>
+      <Text style={styles.titulo}>Aqui puede realizar sus transferencias</Text>
+      <Text style={styles.saldo}>Usted tiene un saldo Actual es de L.{saldo}</Text>
 
       <TextInput
         style={styles.input}
@@ -44,7 +44,7 @@ export default function Transferencias() {
         keyboardType="numeric"
       />
 
-      <Button title="Procesar el Saldo" onPress={enviar} />
+      <Button title="Enviar" onPress={enviar} />
     </View>
   );
 }

@@ -11,7 +11,7 @@ export default function NavegacionTabs() {
     <Tab.Navigator>
       <Tab.Screen name="Inicio" component={Inicio} />
       <Tab.Screen name="Transferencias" component={Transferencias} />
-      <Tab.Screen name="Historico" component={Historico} />
+      <Tab.Screen name="Historial" component={Historico} />
     </Tab.Navigator>
   );
 }

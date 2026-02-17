@@ -17,9 +17,9 @@ export default function ProviderBanco({ children }: Plantilla) {
       setSaldo(saldo - monto);
       setTransacciones([
         ...transacciones,
-        `Transferencia a ${nombre} (${cuenta}) por la cantidad de L.${monto}`,
+        `Se le hizo una transferencia a ${nombre} (${cuenta}) por la cantidad de L.${monto}`,
       ]);
-      Alert.alert("Transferencia", "Su transferencia fue exitosa");
+      Alert.alert("Transferencia", "Muchas gracias, su transferencia ya fue procesada");
     } else {
       Alert.alert("Disculpa", "No tiene saldo suficiente para completar la transaccion");
     }
